@@ -1,4 +1,8 @@
-<h1>Home Page</h1>
+<section class="sidebar">
+<h1 class="sidebar-title">Bloc Chat</h1>
+<button type="button" class="new-room" ng-click="home.formOpen = true" ng-submit="submit()">New Room</button>
 <ul>
   <li ng-repeat='room in home.rooms'>{{ room.name }}</li>
 </ul>
+<ng-include src="'/templates/form.html'"></ng-include>
+</section>

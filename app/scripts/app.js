@@ -12,6 +12,14 @@
       controller: 'HomeCtrl as home',
       templateUrl: '/templates/home.html'
     });
+
+    $stateProvider
+    .state('form', {
+      url: '/',
+      controller: 'FormCtrl as form',
+      templateUrl: '/templates/form.html'
+    });
+
   }
 
   angular
