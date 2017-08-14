@@ -6,7 +6,7 @@ html {
 body {
     background-color: white;
 }
-
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0px;
@@ -19,4 +19,17 @@ body {
 
 .new-room {
   margin: 0 20px;
+}
+
+/* Messages */
+
+.messages {
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    overflow: scroll;
 }
