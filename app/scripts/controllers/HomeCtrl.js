@@ -3,6 +3,7 @@
     this.rooms = Room.all
     this.formOpen = null
     this.createRoom = Room.add
+    this.currentRoom = null;
 
     this.setCurrentRoom = function (room) {
       this.currentRoom = room;
