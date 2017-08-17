@@ -1,6 +1,8 @@
-<form class="form" ng-submit="home.createRoom(home.newRoomName)" ng-if="home.formOpen" ngcontroller="HomeCtrl as home">
-  <div class="form-group">
-    <input type="text" class="form-control" ng-model="home.newRoomName">
-    <button type="submit">Create New Room</button>
-  </div>
-</form>
+<div class="center-modal" ng-if="home.formOpen">
+  <form class="form" ng-submit="home.createRoom(home.newRoomName)" ngcontroller="HomeCtrl as home">
+    <div class="form-group">
+      <input type="text" class="form-control" ng-model="home.newRoomName">
+      <button type="submit">Create New Room</button>
+    </div>
+  </form>
+</div>

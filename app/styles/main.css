@@ -23,8 +23,8 @@ body {
 
 /* Messages */
 
-.messages {
-    position: fixed;
+/*.messages {
+
     top: 0px;
     left: 250px;
     width: 80%;
@@ -32,4 +32,13 @@ body {
     background-color: white;
     z-index: 1;
     overflow: scroll;
+}*/
+
+.center-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e7e7e7;
+  padding: 20px;
 }
