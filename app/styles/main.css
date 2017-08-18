@@ -23,7 +23,7 @@ body {
 
 /* Messages */
 
-.messages {
+/*.messages {
     position: fixed;
     top: 0px;
     left: 250px;
@@ -43,7 +43,16 @@ body {
 }
 
 
-.center-modal {
+.room-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e7e7e7;
+  padding: 20px;
+}*/
+
+.username-modal {
   position: absolute;
   top: 50%;
   left: 50%;

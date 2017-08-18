@@ -1,0 +1,9 @@
+<div class="username-modal" ng-if="!currentUser || currentUser === ''">
+  <form class="form" ng-submit="home.createUsername(userName)" ngcontroller="HomeCtrl as home">
+    <h3>Login</h3>
+    <div class="form-group">
+      <input type="text" class="form-control" ng-model="home.username">
+      <button type="submit">Create User</button>
+    </div>
+  </form>
+</div>
