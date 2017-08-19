@@ -23,7 +23,7 @@ body {
 
 /* Messages */
 
-/*.messages {
+.messages {
     position: fixed;
     top: 0px;
     left: 250px;
@@ -50,7 +50,8 @@ body {
   transform: translate(-50%, -50%);
   background-color: #e7e7e7;
   padding: 20px;
-}*/
+  z-index: 3;
+}
 
 .username-modal {
   position: absolute;
@@ -59,4 +60,5 @@ body {
   transform: translate(-50%, -50%);
   background-color: #e7e7e7;
   padding: 20px;
+  z-index: 2;
 }
