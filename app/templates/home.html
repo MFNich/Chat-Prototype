@@ -15,6 +15,10 @@
         <h3>{{ home.currentRoom.name }}</h3>
     </div>
       <div class='messages-body' ng-repeat='message in home.messages'>{{ message.content }}</div>
+      <div class="message-field">
+        <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="home.newMessage.content" style="width:500px;">
+        <button class="btn-new-message" type="button" ng-click="home.sendMessage()">Send message</button>
+    </div>
   </div>
 <ng-include src="'/templates/form.html'"></ng-include>
 <ng-include src="'/templates/username.html'"></ng-include>

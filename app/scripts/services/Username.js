@@ -1,13 +1,16 @@
 (function() {
-  function BlocChatCookies($cookies) {
-
-    this.createUsername = function () {
-      $cookies.put('blocChatCurrentUser', this.username);
-      $cookies.blocChatCurrentUser = currentUser;
+  function UsernameLogin($cookies) {
+    var UsernameLogin = {};
+    UsernameLogin.createUsername = function(username) {
+      $cookies.put('blocChatCurrentUser', username);
+      // $cookies.blocChatCurrentUser = currentUser;
     }
-    return BlocChatCookies;
-}
+    UsernameLogin.getUser = function(){
+      return $cookies.get('blocChatCurrentUser');
+    }
+    return UsernameLogin;
+  }
   angular
-    .module('blocChat')
-    .factory('BlocChatCookies', ['$cookies', BlocChatCookies]);
+  .module('blocChat')
+  .factory('UsernameLogin', ['$cookies', UsernameLogin]);
 })();
