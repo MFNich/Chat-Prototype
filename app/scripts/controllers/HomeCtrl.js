@@ -12,7 +12,7 @@
       this.messages = Message.getByRoomId(this.currentRoom.$id);
     }
 
-    
+
     this.sendMessage = function () {
       this.newMessage.roomId = this.currentRoom.$id;
       this.newMessage.username = this.currentUser;

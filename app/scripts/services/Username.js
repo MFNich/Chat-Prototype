@@ -1,6 +1,8 @@
 (function() {
   function UsernameLogin($cookies) {
+
     var UsernameLogin = {};
+    
     UsernameLogin.createUsername = function(username) {
       $cookies.put('blocChatCurrentUser', username);
       // $cookies.blocChatCurrentUser = currentUser;
